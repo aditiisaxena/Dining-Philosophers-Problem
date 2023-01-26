@@ -3,9 +3,9 @@ This repository contains two solutions in C language for the classic problem of 
 
 ## Problem description
 The Dining Philosophers problem is a classic problem that illustrates the concept of deadlock in concurrent systems. The problem describes a scenario where five philosophers are sitting at a round table with a bowl of rice in front of each philosopher. The philosophers alternate between eating and thinking. In order to eat, a philosopher must have possession of both of the forks adjacent to their bowl. However, when a philosopher finishes eating, they release both forks, which may be then picked up by the philosopher on their left or right.
-<br>
+<br><br>
 The problem is that if all the philosophers simultaneously pick up the left fork and wait for the right fork to be available, they will all be waiting indefinitely and none of them will be able to eat. This is known as a deadlock situation, as all the philosophers are waiting for a condition that can only be fulfilled by another philosopher releasing a fork, but that philosopher is also waiting for the same condition to be fulfilled.
-<br>
+<br><br>
 The goal of the problem is to come up with a solution that ensures that the philosophers can eat without any of them getting into a deadlock situation. 
 
 ## Solution 1: Spinning Lock
