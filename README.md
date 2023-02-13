@@ -6,7 +6,7 @@ The Dining Philosophers problem is a classic problem that illustrates the concep
 <br><br>
 The problem is that if all the philosophers simultaneously pick up the left fork and wait for the right fork to be available, they will all be waiting indefinitely and none of them will be able to eat. This is known as a deadlock situation, as all the philosophers are waiting for a condition that can only be fulfilled by another philosopher releasing a fork, but that philosopher is also waiting for the same condition to be fulfilled.
 <br><br>
-The goal of the problem is to come up with a solution that ensures that the philosophers can eat without any of them getting into a deadlock situation. 
+The goal of the problem is to come up with a solution that ensures that the philosophers can eat without any of them getting into a deadlock situation. Observe the output of the program to see how the philosophers acquire and release the chopsticks
 
 ## Solution 1: Spinning Lock
 This solution uses a spinning lock that is implemented by a while loop that sleeps for 1 second to prevent deadlock. The philosophers check if both forks are available before trying to acquire them.
@@ -22,4 +22,3 @@ gcc Solution1.c -o Solution1.c -lpthread
 ./Solution1
 ```
 Do the same for Solution2 by switching every "Solution1" in above block with "Solution2
-Observe the output of the program to see how the philosophers acquire and release the chopsticks
