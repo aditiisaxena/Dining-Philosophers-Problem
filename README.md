@@ -15,7 +15,7 @@ This solution uses a spinning lock that is implemented by a while loop that slee
 This solution uses semaphores and odd-even positioning to prevent deadlock. The philosophers are assigned an odd or even position, and the philosophers in odd positions pick up their left fork first, while the philosophers in even positions pick up their right fork first.
 
 ## Running the code
-Clone the repository to your local machine
+Clone the repository to your local machine<br>
 Run the c files in your linux/wsl terminal:
 ```
 gcc Solution1.c -o Solution1.c -lpthread 
